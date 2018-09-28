@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wikicreation</title>
+<!--<link rel="shortcut icon" href="./images/icon1.png">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+function initElement()
+{
+  var menu1 = document.getElementById("menu1");
+  var menu2 = document.getElementById("menu2");
+  var menu3 = document.getElementById("menu3");
+  var menu4 = document.getElementById("menu4");
+  // NOTE: showAlert(); ou showAlert(param); NE fonctionne PAS ici.
+  // Il faut fournir une valeur de type function (nom de fonction déclaré ailleurs ou declaration en ligne de fonction).
+  menu1.onclick = function() {
+    document.getElementById("menu1").style.paddingBottom = "2px";
+    document.getElementById("menu1").style.borderBottom = "1px solid white";
+    document.getElementById("menu2").style.paddingBottom = "0px";
+    document.getElementById("menu2").style.borderBottom = "none";
+    document.getElementById("menu3").style.paddingBottom = "0px";
+    document.getElementById("menu3").style.borderBottom = "none";
+    document.getElementById("menu4").style.paddingBottom = "0px";
+    document.getElementById("menu4").style.borderBottom = "none";
+
+    document.getElementById("text-menu1").style.display = "";
+    document.getElementById("text-menu2").style.display = "none";
+    document.getElementById("text-menu3").style.display = "none";
+    document.getElementById("text-menu4").style.display = "none";
+  };
+
+  menu2.onclick = function() {
+    document.getElementById("menu1").style.paddingBottom = "0px";
+    document.getElementById("menu1").style.borderBottom = "none";
+    document.getElementById("menu2").style.paddingBottom = "2px";
+    document.getElementById("menu2").style.borderBottom = "1px solid white";
+    document.getElementById("menu3").style.paddingBottom = "0px";
+    document.getElementById("menu3").style.borderBottom = "none";
+    document.getElementById("menu4").style.paddingBottom = "0px";
+    document.getElementById("menu4").style.borderBottom = "none";
+
+    document.getElementById("text-menu1").style.display = "none";
+    document.getElementById("text-menu2").style.display = "";
+    document.getElementById("text-menu3").style.display = "none";
+    document.getElementById("text-menu4").style.display = "none";
+  };
+
+  menu3.onclick = function() {
+    document.getElementById("menu1").style.paddingBottom = "0px";
+    document.getElementById("menu1").style.borderBottom = "none";
+    document.getElementById("menu2").style.paddingBottom = "0px";
+    document.getElementById("menu2").style.borderBottom = "none";
+    document.getElementById("menu3").style.paddingBottom = "2px";
+    document.getElementById("menu3").style.borderBottom = "1px solid white";
+    document.getElementById("menu4").style.paddingBottom = "0px";
+    document.getElementById("menu4").style.borderBottom = "none";
+
+    document.getElementById("text-menu1").style.display = "none";
+    document.getElementById("text-menu2").style.display = "none";
+    document.getElementById("text-menu3").style.display = "";
+    document.getElementById("text-menu4").style.display = "none";
+  };
+
+  menu4.onclick = function() {
+    document.getElementById("menu1").style.paddingBottom = "0px";
+    document.getElementById("menu1").style.borderBottom = "none";
+    document.getElementById("menu2").style.paddingBottom = "0px";
+    document.getElementById("menu2").style.borderBottom = "none";
+    document.getElementById("menu3").style.paddingBottom = "0px";
+    document.getElementById("menu3").style.borderBottom = "none";
+    document.getElementById("menu4").style.paddingBottom = "2px";
+    document.getElementById("menu4").style.borderBottom = "1px solid white";
+
+    document.getElementById("text-menu1").style.display = "none";
+    document.getElementById("text-menu2").style.display = "none";
+    document.getElementById("text-menu3").style.display = "none";
+    document.getElementById("text-menu4").style.display = "";
+  };
+
+};
+</script>
+
+<link href="css/style-home.css" rel="stylesheet" type="text/css" media="all" />
+
+
+</head>
+
+<body onload="initElement();">
+  <!--<div id="root">
+    <!--
+    <div data-reactroot id="app" class="blue">
+      <header id="main-header">
+        <a id="main-logo"></a>
+        <div id="main-title-container" style="display: none;">
+          <h1 class="std-title">Wikicreation</h1>
+        </div>
+        <div class="menu-ham clickable"></div>
+        <div class="language"><span class="selected">FR</span>
+        <div class="separator"></div><span class="">EN</span></div>
+      </header>
+        <div id="article-preview-background" style="display: none;"></div>
+        <div id="article-preview" class="hide ">
+          <div class="page-loading">
+            <div class="spinner"></div>
+          </div>
+          <div id="article-preview-content">
+            <div class="preview-exit clickable"></div>
+            <div class="menu-ham clickable"></div>
+            <div class="language"><span class="selected">FR</span>
+              <div class="separator"></div>
+              <span class="">EN</span>
+            </div>
+            <h5 class="article-infos"><!-- react-text: 22 --><!-- /react-text --><!-- react-text: 23 --> <!-- /react-text <span></span>
+            </h5>
+            <h3 class="article-title"></h3>
+            <h4 class="article-author"></h4>
+            <div class="separator"></div>
+            <p class="article-desc"></p>
+            <div class="btn article-link">Lire l'article</div>
+          </div>
+        </div>
+        <div id="menus-background" style="display: none;"></div>
+    </div>-->
+        <div class="parent">
+          <div id="div0">
+          <div class="row" id="btn-site">
+            <div class="col-12" style="text-align:center">
+              <a href="http://www.wikicreation.fr/fr/">continuer vers le site <img src="img/plane-white.png"/></a>
+            </div>
+          </div>
+
+          <div class="row" id="logo">
+            <div class="col-12" style="text-align:center">
+              <img src="icons/android-chrome-512x512.png"/>Wiki<span style="color:#dc6e6d;weight:bold;">Création</span>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-2"></div>
+            <div class="col-8">
+            <h3>
+              WikiCreation est une publication scientifique en ligne nouvelle et novatrice. Son objet d’étude est la notion et l’acte de création dans tous leurs états, sous tous leurs aspects, selon toutes les approches. WikiCreation est donc ouverte à toutes les disciplines et a l’ambition de devenir une publication de référence dans le domaine des études de la création.
+            </h3>
+            </div>
+          <div class="col-2"></div>
+          </div>
+
+          <div class="row" id="scroll">
+            <div class="col-12" style="text-align:center">
+              <img src="img/scroll.png"/>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="parent2">
+        <div id="div1">
+
+          <div class="row">
+          <div class="col-2"></div>
+            <div class="col-8" id="menu">
+                <span id="menu1" style="padding-bottom:2px; border-bottom:1px solid white; cursor:pointer">Presentation de la publication</span>
+                <span id="menu2" style="cursor:pointer">Un projet éditorial relationnel</span>
+                <span id="menu3" style="cursor:pointer">Editeur</span>
+                <span id="menu4" style="cursor:pointer">Partenaires</span>
+            </div>
+          <div class="col-2"></div>
+          </div>
+
+          <div class="row" id="text-menu1">
+          <div class="col-2"></div>
+            <div class="col-8">
+            <h3>
+              WikiCreation est une publication scientifique en ligne nouvelle et novatrice. Son objet d’étude est la notion et l’acte de création dans tous leurs états, sous tous leurs aspects, selon toutes les approches. WikiCreation est donc ouverte à toutes les disciplines et a l’ambition de devenir une publication de référence dans le domaine des études de la création.<br/><br/>
+              Le comité scientifique de WikiCreation est international, comme son comité de lecture (peer review), qui sélectionne les articles qui lui sont soumis à partir d’une lecture en double aveugle.<br/><br/>
+              Cette publication en ligne est ouverte à tous les chercheurs, des spécialistes reconnus aux doctorants. Les articles en français sont traduits en anglais et inversement. Les articles dans une autre langue que le français ont aussi leur version anglaise. Si les articles publiés respectent les exigences académiques (références bibliographiques, notes, etc.), ils restent néanmoins accessibles à un public étendu.
+            </h3>
+            </div>
+          <div class="col-2"></div>
+          </div>
+
+          <div class="row" id="text-menu2" style="display: none;">
+          <div class="col-2"></div>
+            <div class="col-8">
+            <h3>
+              Le projet épistémologique et éditorial de WikiCreation est de type relationnel. Il est centré sur l’étude de la relation que la création entretient avec ses environnements. Dans chaque article, le concept de création est donc heuristiquement articulé à une autre notion, à un autre un concept, à un autre champ. Ainsi la création n’est-elle pas définie comme un absolu mais dans un réseau de relations.
+              Chaque article s’évertue donc à montrer comment telle notion judicieusement choisie par affinité permet d’explorer, d’éclairer, d’enrichir, de nourrir, d’exemplifier, le concept de création, et réciproquement. L’étude de la relation entre deux, voire trois notions est donc le pivot de chaque article.
+              Ces duos ou trios peuvent être des notions proches, comme « créativité et création », ou adverses comme « la création comme processus et la création comme résultat », ou contradictoires comme « création et destruction », ou différentes comme « sérendipité et création » ou « sommeil, rêve et création », ou encore « crise, changement et création », etc.
+              WikiCreation permet ainsi à d’autres chercheurs ou groupes de chercheurs d’apporter des contributions distinctes sur les mêmes combinaisons.
+              Les articles étudient l’acte créatif, qu’il soit artistique, scientifique, technologique, savant ou ordinaire, dans ses fonctions à la fois anthropologiques et sociétales. La création est donc le fil rouge de l’ensemble de la publication et son dénominateur commun. Un tel réseau, constitué en regard de notions ou concepts divers, permet ainsi de la circonscrire d’article en article.
+              C’est donc une entreprise collective et éventuellement collaborative qui travaille sur la notion de création par la multiplication des points de vue et leur mise en tension dans un même espace numérique doté de moteurs de recherche et de moteurs sémantiques.
+            </h3>
+            </div>
+          <div class="col-2"></div>
+          </div>
+
+          <div class="row" id="text-menu3" style="display: none;">
+          <div class="col-2"></div>
+            <div class="col-8">
+            <p>
+              <strong>Comité de rédaction</strong><br/><br/>
+              Richard Conte (Poïéticien)<br/>Bernard Darras (Sémioticien)<br/>Christophe Genin (Philosophe)<br/><br/>
+              <strong>Institut ACTE UMR 8218<br/>Université Paris 1 Panthéon-Sorbonne & CNRS<br/>LabEx CAP</strong>
+            </p>
+            </div>
+          <div class="col-2"></div>
+          </div>
+
+        </div>
+      </div>
+  <!--</div>-->
+</body>
+</html>

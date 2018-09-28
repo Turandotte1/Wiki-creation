@@ -1,0 +1,110 @@
+#main-header,#main-title-container,#article-preview-background,#article-preview,#menus-background,#menus,#author-profile,#main-aside,.backToTop{display:none;}
+
+html, body, #root, #app
+{
+  height: auto;
+  width: auto;
+}
+
+#root, #app
+{
+  position: static;
+  overflow: auto;
+}
+
+#article-header{
+  page-break-inside: avoid;
+  page-break-after: always;
+}
+
+#article-title-3{
+  page-break-inside: avoid;
+  /*page-break-before: always;*/
+}
+
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+.detail-title{
+  page-break-after: avoid;
+}
+
+@page {
+  size: A4;
+
+  @bottom-right-corner {
+    content: counter(page); /* TODO check Webkit update */
+  }
+}
+
+/* TODO afficher le logo */
+/*@page {
+  @top-left {
+    display: block;
+    position: relative; top: 38px; left: 60px;
+    width: 200px; height: 30px;
+    background-image: url('../img/main-logo-white.svg');
+    background-repeat: no-repeat;
+    border: 0;
+    text-decoration: none;
+  }
+}*/
+
+/*---Main Container---*/
+#main-container
+{
+  position: static;
+  width: auto; height: auto;
+  overflow: auto;
+}
+
+/*---Main content---*/
+#main-content
+{
+  position: static;
+  height: auto;
+}
+
+/*---Main article---*/
+
+#article-main, #about-main, #contact-main, #legal-main, #committee-main, #contribute-main, #authors-main, #articles-main
+{
+  padding: 0;
+  padding-left: 14%;
+  font-size: 11pt; font-weight: normal;
+}
+
+#article-header .article-infos
+{
+  font-size: 11pt; font-weight: normal;
+  line-height: 13pt;
+}
+
+#article-header .article-title
+{
+  font-size: 30pt;
+}
+
+#article-header .article-author
+{
+  font-size: 20pt;
+}
+
+#article-header .article-author-details
+{
+  font-size: 11pt; font-weight: normal;
+  line-height: 13pt;
+}
+
+#article-header .detail-title {
+  font-size: 11pt;
+  line-height: 13pt;
+}
+
+
+#summary a .entry {
+  font-size: 11pt;
+  line-height: 13pt;
+}
